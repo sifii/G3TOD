@@ -58,13 +58,13 @@ Edit
 ### 3. Install Dependencies
       ```bash
       pip install -r requirements.txt
+
+### 4. Run the Extraction Pipeline
+     ```bash
       🛠️ Usage
-     Run the Extraction Pipeline
          
-     python run.py
+    python run.py
     This processes a predefined input (from main.py). You can modify main.py to process:
-
-
     Run Unit Tests
     python test.py
 This will validate core functionalities such as entity recognition, ConceptNet query interface, and triplet extraction accuracy.
