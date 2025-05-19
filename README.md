@@ -1,4 +1,4 @@
-#G³TOD
+# G³TOD
 
 **G³TOD** is a generalizable framework designed to enhance personalization in task-oriented dialogue systems. It utilizes three structured knowledge graphs extracted from conversation history:
 
