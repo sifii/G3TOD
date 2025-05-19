@@ -45,7 +45,7 @@ Edit
 ## 🚀 Installation
 
 ### 1. Clone the Repository
-
+```bash
 
 git clone https://github.com/yourusername/triplet-extraction.git
 cd triplet-extraction
