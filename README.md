@@ -45,56 +45,30 @@ Edit
 ## 🚀 Installation
 
 ### 1. Clone the Repository
-```bash
+    ```bash
+    git clone https://github.com/yourusername/triplet-extraction.git
+    cd triplet-extraction
 
-git clone https://github.com/yourusername/triplet-extraction.git
-cd triplet-extraction
+
 ### 2. Create and Activate a Virtual Environment
-bash
-Copy
-Edit
-python -m venv venv
-source venv/bin/activate        # On Windows: venv\Scripts\activate
-3. Install Dependencies
-bash
-Copy
-Edit
-pip install -r requirements.txt
-🛠️ Usage
-Run the Extraction Pipeline
-bash
-Copy
-Edit
-python run.py
-This processes a predefined input (from main.py). You can modify main.py to process:
+     ```bash
+     python -m venv venv
+    source venv/bin/activate        # On Windows: venv\Scripts\activate
 
-A text file
+### 3. Install Dependencies
+      ```bash
+      pip install -r requirements.txt
+      🛠️ Usage
+     Run the Extraction Pipeline
+         
+     python run.py
+    This processes a predefined input (from main.py). You can modify main.py to process:
 
-A batch of conversations
 
-User input from a chatbot
-
-Run Unit Tests
-bash
-Copy
-Edit
-python test.py
+    Run Unit Tests
+    python test.py
 This will validate core functionalities such as entity recognition, ConceptNet query interface, and triplet extraction accuracy.
 
-🔍 Example
-Input:
-
-vbnet
-Copy
-Edit
-Alice went to the park to meet her friend Bob.
-Extracted Triplets:
-
-scss
-Copy
-Edit
-(Alice, went_to, park)
-(Alice, meet, Bob)
 📦 Dependencies
 spacy – Entity recognition and NLP processing
 
