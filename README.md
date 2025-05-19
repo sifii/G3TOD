@@ -18,15 +18,22 @@ This repository implements the triplet extraction module for G3TOD. It extracts 
 
 ## 📁 Project Structure
 
-.
 ├── conceptnet.py # Interface for querying ConceptNet
+
 ├── entity.py # Entity recognition and cleaning logic
+
 ├── extract_rel_triplets.py # Core logic for relationship extraction
+
 ├── triplet_extract.py # Utilities for triplet formatting and filtering
+
 ├── main.py # Script for sample triplet extraction
+
 ├── run.py # Entry point to execute the extraction pipeline
+
 ├── test.py # Unit tests for each component
+
 ├── requirements.txt # List of required Python packages
+
 └── README.md # Project documentation
 
 yaml
@@ -42,7 +49,7 @@ Edit
 ```bash
 git clone https://github.com/yourusername/triplet-extraction.git
 cd triplet-extraction
-2. Create and Activate a Virtual Environment
+### 2. Create and Activate a Virtual Environment
 bash
 Copy
 Edit
