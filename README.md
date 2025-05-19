@@ -55,6 +55,18 @@ Edit
      python -m venv venv
     source venv/bin/activate        # On Windows: venv\Scripts\activate
 
+#### 🤖 Ollama Setup (if not already)
+      ```bash
+      1. Install Ollama
+      Follow the official instructions here: https://ollama.com/download
+
+      2. Start Ollama
+      ollama serve
+      3. Pull a Model (e.g., LLaMA2 or openai)
+     ollama pull llama2
+     # or
+     ollama pull openai
+
 ### 3. Install Dependencies
       ```bash
       pip install -r requirements.txt
