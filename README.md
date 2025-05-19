@@ -1,90 +1,100 @@
 # G3TOD
-A generalizable framework that enhances personalization using three structured knowledge graphs: entity context, user persona, and commonsense reasoning, all extracted from conversation history. 
-# Triplet Extraction System
 
-This project extracts relational triplets from textual input using ConceptNet and entity recognition modules. It includes a main pipeline, testing module, and utility components.
+**G3TOD** is a generalizable framework designed to enhance personalization in task-oriented dialogue systems. It utilizes three structured knowledge graphs extracted from conversation history:
 
-## 📁 Project Structure
+- 🧾 **Entity Context Graph**  
+- 👤 **User Persona Graph**  
+- 🧠 **Commonsense Reasoning Graph**
 
-- `main.py`: Entry point to run the triplet extraction.
-- `triplet_extract.py`: Triplet extraction logic.
-- `extract_rel_triplets.py`: Helper for extracting relationship triplets.
-- `entity.py`: Entity recognition and processing.
-- `conceptnet.py`: Uses ConceptNet for knowledge-based expansion.
-- `test.py`: Contains test cases to validate the functionality.
+These graphs help model rich, user-aware, and context-driven interactions, improving response relevance and coherence.
 
-## 🚀 Installation
+---
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your_username/triplet-extraction.git
-   cd triplet-extraction
 # 🧠 Triplet Extraction System
 
-This project implements a pipeline to extract relational triplets from natural language text using entity recognition and ConceptNet-based relationship reasoning. It is useful for building knowledge graphs, information extraction, and semantic analysis.
+This repository implements the triplet extraction module for G3TOD. It extracts (subject, relation, object) triplets from natural language using entity recognition and ConceptNet-based reasoning. These triplets are crucial for building knowledge graphs that support personalized dialogue systems, semantic analysis, and downstream NLP tasks.
 
 ---
 
 ## 📁 Project Structure
 
 .
-├── conceptnet.py # Interface for querying ConceptNet 
-
+├── conceptnet.py # Interface for querying ConceptNet
 ├── entity.py # Entity recognition and cleaning logic
-
 ├── extract_rel_triplets.py # Core logic for relationship extraction
-
 ├── triplet_extract.py # Utilities for triplet formatting and filtering
-
-├── main.py # Main driver script
-
-├── run.py # Entry point to execute the pipeline
-
-├── test.py # Unit tests for modules
-
-├── requirements.txt # Required Python packages
-
+├── main.py # Script for sample triplet extraction
+├── run.py # Entry point to execute the extraction pipeline
+├── test.py # Unit tests for each component
+├── requirements.txt # List of required Python packages
 └── README.md # Project documentation
 
-
+yaml
+Copy
+Edit
 
 ---
 
 ## 🚀 Installation
 
-### 1. Clone the repository
+### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/yourusername/triplet-extraction.git
 cd triplet-extraction
-2. Create and activate a virtual environment
+2. Create and Activate a Virtual Environment
+bash
+Copy
+Edit
 python -m venv venv
-source venv/bin/activate     # On Windows: venv\Scripts\activate
-3. Install dependencies
+source venv/bin/activate        # On Windows: venv\Scripts\activate
+3. Install Dependencies
+bash
+Copy
+Edit
 pip install -r requirements.txt
 🛠️ Usage
-Run the extraction pipeline
+Run the Extraction Pipeline
+bash
+Copy
+Edit
 python run.py
-By default, this processes a predefined input (in main.py). You can modify it to process a file or user input.
+This processes a predefined input (from main.py). You can modify main.py to process:
 
+A text file
+
+A batch of conversations
+
+User input from a chatbot
+
+Run Unit Tests
+bash
+Copy
+Edit
 python test.py
-This will validate the functionality of various components including entity recognition and triplet extraction.
+This will validate core functionalities such as entity recognition, ConceptNet query interface, and triplet extraction accuracy.
 
+🔍 Example
+Input:
+
+vbnet
+Copy
+Edit
+Alice went to the park to meet her friend Bob.
+Extracted Triplets:
+
+scss
+Copy
+Edit
+(Alice, went_to, park)
+(Alice, meet, Bob)
 📦 Dependencies
-spacy: For entity recognition and NLP processing
+spacy – Entity recognition and NLP processing
 
-nltk: For tokenization and semantic tools
+nltk – Tokenization, POS tagging, and basic NLP tools
 
-requests: For ConceptNet API calls
+requests – Querying ConceptNet API
 
-networkx: For handling ConceptNet graph relations
+networkx – For handling and visualizing graph relations
 
-(See requirements.txt for exact versions.)
-
-🤝 Contributions
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-
-
-
-
-
+See requirements.txt for exact versions.
